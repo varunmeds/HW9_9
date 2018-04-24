@@ -3,7 +3,7 @@ from random import randint
 
 app = Flask(__name__)
   
-@app.route("/",methods=['GET'])
+@app.route("/")
 def quot():
     text_file = open('inspiration.txt', "r")
     data = text_file.read().split('\n')
